@@ -1,0 +1,32 @@
+{
+  "name": "service-auth",
+  "version": "1.0.0",
+  "description": "make a create,read,update,delete register and login",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Muto7/service-auth.git"
+  },
+  "author": "muto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Muto7/service-auth/issues"
+  },
+  "homepage": "https://github.com/Muto7/service-auth#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "joi": "^17.12.2",
+    "jsonwebtoken": "^9.0.2",
+    "mariadb": "^3.3.0",
+    "retry": "^0.13.1",
+    "winston": "^3.13.0"
+  }
+}

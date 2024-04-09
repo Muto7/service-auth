@@ -1,0 +1,9 @@
+POST http://localhost:5001/api/users
+Content-Type: application/json
+
+{
+    "name": "amdin",
+    "email": "admin@gmail.com",
+    "password": "123456",
+    "confPassword": "123456"
+}

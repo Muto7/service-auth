@@ -1,0 +1,28 @@
+version: '3'
+
+services:
+  nodejs_app:
+    container_name: service-auth
+    image: service-auth:latest
+    restart: always
+    ports:
+      - "5001:5001"
+    environment:
+      NODE_ENV: production
+      TZ: Asia/Jakarta
+      DB_CONFIG_HOST: mysql
+      DB_CONFIG_USER: root
+      DB_CONFIG_PASS: password123#
+      DB_CONFIG_DATABASE: db_service_auth
+    depends_on:
+      - mysql
+
+  mysql:
+    container_name: db-service-auth
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: password123#
+      MYSQL_DATABASE: db_service_auth
+    ports:
+      - "3306:3306"
